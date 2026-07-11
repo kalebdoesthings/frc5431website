@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <title>Home - 5431</title>
 </head>
 <body>
     
+    
+<img id="titanImg" src="titan.png"></img> 
+
+
+
+
+
+<nav id="mainNav">
+  <div id="navLinks">
+    <a href="/html/">About</a>
+    <a href="/css/">Sponsors</a>
+    <a href="/css/">Events</a>
+    <a href="/js/">Contact</a>
+    <button class="becomeSponsor">Become a Sponsor</button>
+    
+  </div>
+</nav>
+
+
+
+
+
+
+<div id="bannerWrap">
+
+  <img src="banner.png" class="bannerImg">
+
+
+
+  <h1 class="teamInfo"> FIRST ROBOTICS COMPETITON  · TEAM 5431</h1>
+
+
+  <h1 class="bullshit"><span class="white">Real Students.</span> <br>Real Engineering.</h1>
+
+
+  <h2 class="aboutUsBullshit">Titan Robotics develops future engineers and leaders through competitive robotics, mentorship, and community service.</h2>
+
+
+  <button class="sponsorBullshit">Sponsor Us</button>
+
+
+   <button class="learnMoreBullshit">About Us</button>
+
+
+
+
+</div>
+
+
+
+<script>
+  const words = ["Innovative", "Driven", "The Future", "Titans", "5431"];
+  let i = 1;
+  const rotatingWord = document.getElementById("rotateWord");
+  rotatingWord.textContent = words[0];  
+setInterval(() => {
+  rotatingWord.style.opacity = 0;
+  setTimeout(() => {
+    rotatingWord.textContent = words[i];
+    i = (i + 1) % words.length;
+    rotatingWord.style.opacity = 1;
+  }, 300);
+}, 2000);
+</script>
+
+<script src="countup.js">
+
+
+</script>
+
+<script>
+document.querySelectorAll(".num").forEach(el => countUp(el, 1500));
+</script>
+
+
 </body>
 </html>
